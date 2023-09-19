@@ -441,7 +441,11 @@ set(fdk_aacinclude_HEADERS
   libAACenc/include/aacenc_lib.h
   libAACdec/include/aacdecoder_lib.h)
 
+set (ISTHARI_SRC 
+    isthari/src/exporter.cpp)  
+
 set(libfdk_aac_SOURCES
+    ${ISTHARI_SRC}
     ${AACDEC_SRC} ${AACENC_SRC}
     ${ARITHCODING_SRC}
     ${DRCDEC_SRC}
